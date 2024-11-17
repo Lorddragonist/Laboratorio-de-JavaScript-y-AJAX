@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 2 Andrés Felipe Vargas González</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content activity-title">
+      <h1>Actividad 2: Laboratorio. Tecnologías JavaScript y AJAX</h1>
+      <p>Por: Andrés Felipe Vargas González</p>
+    </div>
+    <div class="content java-script">
+      <h1>Ejercicios JavaScript</h1>
+      <p class="enunciado">1. Detectar si la cadena de entrada es un palíndromo.</p>
+      <form id="formPalindromo">
+        <input type="text" id="palindromo" placeholder="Ingrese una palabra" />
+        <button type="submit" class="btn waves-effect waves-light">
+          Verificar
+        </button>
+        <p id="resultado1"></p>
+      </form>
+      <p class="enunciado">
+        2. Escribe un programa que pida dos números y escriba en la pantalla
+        cual es el mayor.
+      </p>
+      <form id="formNumeroMayor">
+        <input type="number" id="numero1" placeholder="Ingrese un número" />
+        <input type="number" id="numero2" placeholder="Ingrese otro número" />
+        <button type="submit" class="btn waves-effect waves-light">
+          Verificar
+        </button>
+        <p id="resultado2"></p>
+      </form>
+      <p class="enunciado">
+        3. Escribe un programa que pida una frase y escriba las vocales que
+        aparecen.
+      </p>
+      <form id="formVocales">
+        <input type="text" id="frase" placeholder="Ingrese una frase" />
+        <button type="submit" class="btn waves-effect waves-light">
+          Verificar
+        </button>
+        <p id="resultado3"></p>
+      </form>
+      <p class="enunciado">
+        4. Escribe un programa que pida una frase y escriba cuántas veces
+        aparecen cada una de las vocales.
+      </p>
+      <form id="formContarVocales">
+        <input type="text" id="fraseContar" placeholder="Ingrese una frase" />
+        <button type="submit" class="btn waves-effect waves-light">
+          Verificar
+        </button>
+        <p id="resultado4"></p>
+      </form>
+    </div>
+    <div class="content ajax">
+      <h1>Ejercicios AJAX</h1>
+      <p class="enunciado">
+        1. Al cargar la página, el cuadro de texto debe mostrar por defecto la
+        URL de la propia página.
+      </p>
+      <p id="resultado5"></p>
+      <p class="enunciado">
+        2. Al pulsar el botón Mostrar Contenidos, se debe descargar mediante
+        peticiones AJAX el contenido correspondiente a la URL introducida por el
+        usuario. El contenido de la respuesta recibida del servidor en se debe
+        mostrar en la zona de Contenidos del archivo. 
+        <br>
+        <strong style="color: #39FF14;">(Ejemplo: https://api.escuelajs.co/api/v1/categories)</strong> 
+      </p>
+      <form id="formMostrarContenidos">
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="Ingrese la URL"
+          required
+        />
+        <button type="submit" class="btn waves-effect waves-light">
+          Mostrar Contenidos
+        </button>
+      </form>
+      <div id="zonaContenidos">
+        <p>El contenido de la URL aparecerá aquí.</p>
+      </div>
+      <p class="enunciado">
+        3. En la zona Estados de la petición se debe mostrar en todo momento el
+        estado en el que se encuentra la petición (no iniciada, cargando,
+        completada, etc.).
+      </p>
+      <div id="estadoPeticion">
+        <p>Estado: No iniciado</p>
+      </div>
+      <p class="enunciado">
+        4. Mostrar el contenido de todas las cabeceras de la respuesta del
+        servidor en la zona Cabeceras HTTP de la respuesta del servidor.
+      </p>
+      <div id="zonaCabeceras">
+        <p>Estado: No iniciado</p>
+      </div>
+      <p class="enunciado">
+        5. Mostrar el código y texto de la respuesta del servidor en la zona
+        Código de estado.
+      </p>
+      <div id="zonaCodigoEstado">
+        <p>Estado: No iniciado</p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

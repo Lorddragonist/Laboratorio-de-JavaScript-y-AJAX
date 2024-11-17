@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #f0f0f0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body p{
+    font-size: 12px;
+    padding: 8px;
+}
+
+.enunciado{
+    margin-top: 16px;
+}
+body h1 {
+    font-size: 24px;
+    padding: 8px;
+}
+
+body input{
+    color: #f0f0f0;
+}
+
+body .content{
+    margin: 8px;
+    padding: 16px;
+    border: #f0f0f0 1px solid;
+    border-radius: 8px;
+    width: 52rem;
+}
+
+.content.activity-title{
+    margin-top: 24px;
+}
+
+.content.ajax #resultado5{
+    border: #f0f0f0 1px solid;
+    border-radius: 8px;
+}
+
+.content.ajax #zonaContenidos p{
+    width: 48rem;
+    border: #f0f0f0 1px solid;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
